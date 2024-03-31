@@ -43,11 +43,23 @@ int main()
     // 7.a. (iter_loc): delete the element at iter
     // 7.b. (iter_start, iter_end): delete [iter_start, iter_end] block
 
-    vector<int>::iterator start = the_vector.begin() + 1;
-    vector<int>::iterator end = the_vector.end() - 2;
+    // vector<int>::iterator start = the_vector.begin() + 1;
+    // vector<int>::iterator end = the_vector.end() - 2;
 
-    the_vector.erase(start, end);
-    cout << the_vector.size();
+    // the_vector.erase(start, end);
+    // cout << the_vector.size();
+
+    // 8. Insert
+    // 8.1. insert(iter_pos, val) : insert <val> BEFORE <iter_pos>
+    // vector<int>::iterator start_iter = the_vector.begin();
+    // the_vector.insert(start_iter, 100);
+    // 8.2. insert(iter_pos, size, val): insert a <size>-element block of <value> BEFORE <iter_pos>
+    // vector<int>::iterator start_iter = the_vector.begin();
+    // the_vector.insert(start_iter, 3, 100);
+    // 8.3. insert(iter_pos, iter_start, iter_end): insert a block [iter_start, iter_end) before iter_pos;
+    // vector<int>::iterator start_iter = the_vector.begin();
+    // vector<int> inserted_block = vector<int>({99, 100});
+    // the_vector.insert(start_iter, inserted_block.begin(), inserted_block.end());
 
     for (int i = 0; i < the_vector.size(); ++i)
         cout << the_vector[i] << " ";
