@@ -12,7 +12,7 @@ int main()
     // 3. vector<int> a = vector<int>(b);
     // Will copy (clone) the value of vector b
     // 4. vector<int> a = vector<int>(size, initial_value)
-    // Will create a vector that contains <size> values of <initial_value>
+    // Will create a vector that contains <size> values of <initial_v alue>
     // 5. vecotr<int> a = vector<int>(iter1, iter2)
     // Will create a copy vector that contains values from iter 1 to iter2. Everything changed in new vector will effect the values of the vector that used for initializing.
     // vector<int> b = vector<int>(4, 10);
@@ -23,7 +23,7 @@ int main()
     // cout << endl;
     // cout << (&a[0] == &b[0]);
     // cout << endl;
-    // for (int i = 0; i < a.size(); ++i)
+    // for (int i = 0; i < a.size() ; ++i)
     //     cout << a[i] << " ";
     vector<int> the_vector = vector<int>();
     for (int i = 0; i < 10; ++i)
@@ -61,7 +61,36 @@ int main()
     // vector<int> inserted_block = vector<int>({99, 100});
     // the_vector.insert(start_iter, inserted_block.begin(), inserted_block.end());
 
+    // 9. Pop back
+    // the_vector.pop_back();
+    // the_vector.pop_back();
+
+    // 10. Push Back
+    // the_vector.push_back(10000);
+
+    // 11. rbegin(), rend()
+    // rbegin() + 1 <=> end() - 1
+    // rend() - 1 <=> begin() + 1
+    // vector<int>::iterator begin = the_vector.begin();
+    // vector<int>::iterator end = the_vector.end();
+    // vector<int>::reverse_iterator reverse_begin = the_vector.rbegin();
+    // vector<int>::reverse_iterator reverse_end = the_vector.rend();
+    // cout << "Begin " << *begin << endl;
+    // cout << "Reversed End " << *(reverse_end - 1) << endl;
+    // cout << "End " << *(end - 1) << endl;
+    // cout << "Reverse Begin " << *reverse_begin << endl;
+
+    // 12. Swap
+    // vector<string> v1 = vector<string>({"V1"});
+    // vector<string> v2 = vector<string>({"V2"});
+    // v1.swap(v2);
+    // for (int i = 0; i < v1.size(); ++i)
+    //     cout << v1.at(i) << endl;
+    // for (int i = 0; i < v2.size(); ++i)
+    //     cout << v2.at(i) << endl;
+
     for (int i = 0; i < the_vector.size(); ++i)
-        cout << the_vector[i] << " ";
+        cout
+            << the_vector[i] << " ";
     return 0;
 }
