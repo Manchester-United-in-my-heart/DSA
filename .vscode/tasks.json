@@ -12,7 +12,7 @@
       "label": "build",
       "type": "shell",
       "command": "g++",
-      "args": ["${file}", "-g", "-o", "${workspaceFolder}/build/${fileBasenameNoExtension}"],
+      "args": ["-O0", "${file}", "-g", "-o", "${workspaceFolder}/build/${fileBasenameNoExtension}"],
       "group": {
         "kind": "build",
         "isDefault": true
