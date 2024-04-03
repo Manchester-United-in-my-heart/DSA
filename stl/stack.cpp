@@ -13,6 +13,6 @@ int main()
     // get the size of stack
     // 5. top()
     // return the top element's pointer
-    cout << the_stack.top();
+    // cout << the_stack.top();
     return 0;
 }
